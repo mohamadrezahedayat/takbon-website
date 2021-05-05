@@ -1,8 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @font-face {
   font-family: 'Whyte Inktrap';
-
   src: url('/font/WhyteInktrap-Regular.woff2') format('woff');
+}
+@font-face {
+  font-family: 'yekan';
+  src: url('/font/Yekan.woff') format('woff');
+}
+@font-face {
+  font-family: 'dana-bold';
+  src: url('/font/dana-bold.woff2') format('woff');
+}
+@font-face {
+  font-family: 'dana-bold-italic';
+  src: url('/font/dana-bolditalic.woff2') format('woff');
+}
+@font-face {
+  font-family: 'dana-regular';
+  src: url('/font/dana-regular.woff2') format('woff');
+}
+@font-face {
+  font-family: 'dana-regular-italic';
+  src: url('/font/dana-regularitalic.woff2') format('woff');
+}
+@font-face {
+  font-family: 'shabnam-bold';
+  src: url('/font/Shabnam-Bold-FD-WOL.woff2') format('woff');
+}
+@font-face {
+  font-family: 'shabnam';
+  src: url('/font/Shabnam-FD-WOL.woff2') format('woff');
+}
+@font-face {
+  font-family: 'momizat';
+  src: url('/font/momizat.ttf') format('woff');
 }
 :root {
   --color-black: #0f0f0f;

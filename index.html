@@ -1,28 +1,53 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>شرکت مهندسی سامانه های پشتیبان تصمیم – تاکبن</title>
-  <link rel="stylesheet" href="stylefarsi.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.7.0/d3.min.js"
+    integrity="sha512-cd6CHE+XWDQ33ElJqsi0MdNte3S+bQY819f7p3NUHgwQQLXSKjE4cPZTeGNI+vaxZynk1wVU3hoHmow3m089wA=="
+    crossorigin="anonymous"></script>
+  <script src="vendors/anime.min.js" defer></script>
+  <script src="vendors/magnet-mouse.min.js" defer></script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+  <!-- AOS CSS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Tailwind Library -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+  <!-- AOS.js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <!-- Navigation Script -->
+  </script>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header>
-    <a id="logo" href="/"><img src="takbon4.gif" alt="logo"></a>
-    <div class="menu">
+  <header class="header">
+    <a class="header__logo aos-init aos-animate" href="/"><img src="images/takbon3.gif" alt="logo" data-aos="fade-right"
+        data-aos-delay="600" data-aos-duration="2000" /></a>
+    <video class="header__video" src="/video/Computer - 56888 1080.mp4" loop muted autoplay></video>
+    <div class="header__menu">
       <ul>
-        <li><a class="active" href="#home">خانه</a></li>
-        <li><a href="#contact">تماس با ما</a></li>
-        <li><a href="#about">درباره ما</a></li>
-        <li><a href="#about">خدمات قابل ارائه</a></li>
-        <li><a href="#about">لیست پروژه ها</a></li>
+        <li><a class="active" href="/">خانه</a></li>
+        <li><a href="/contact.html">تماس با ما</a></li>
+        <li><a href="/about.html">درباره ما</a></li>
+        <li><a href="#services">خدمات قابل ارائه</a></li>
+        <li><a href="/projects.html">لیست پروژه ها</a></li>
       </ul>
     </div>
-    <div class="anim">
+    <div class="header__text" data-aos="flip-up" data-aos-delay="1000" data-aos-duration="2000">
+      <img class="header__text-svg" src="images/hero_text.svg" alt="logo" />
+    </div>
+    <div class="header__anim" data-aos="zoom-in" data-aos-delay="1200" data-aos-duration="2000">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 800">
-        <g fill="none" fill-rule="evenodd">
+        <g fill="none" fill-rule="evenodd" stroke-width="2.5">
           <path stroke="#31B495"
             d="M781.02 488.77v69.78c0 1.08-.88 1.96-1.97 1.96l-135.12-.04c-1.09 0-2.6.62-3.38 1.39l-39.23 38.96a5.52 5.52 0 0 1-3.37 1.4h-75.38a1.97 1.97 0 0 1-1.97-1.97v-33.5" />
           <path stroke="#F4D21F"
@@ -129,304 +154,490 @@
             d="M458.48 496.1h9.55c1.09 0 2.6-.63 3.37-1.4l48.23-47.83a5.52 5.52 0 0 1 3.38-1.39h24.26c1.08 0 2.6.63 3.37 1.39l23.26 23.1c.77.76 2.29 1.39 3.37 1.39h111.06c1.09 0 1.97-.88 1.97-1.96v-54.46c0-1.08-.63-2.59-1.4-3.33l-20.35-20.04-2.8-2.76-1.17-1.16a5.52 5.52 0 0 0-3.37-1.39h-11.66a1.97 1.97 0 0 1-1.97-1.96V310.6c0-1.08.88-1.96 1.97-1.96h77.38" />
           <path stroke="#9DCA40"
             d="M-34.94 402.19v111.19c0 1.07.63 2.58 1.4 3.35l49.06 48.71c.76.77 2.28 1.4 3.37 1.4h21.8c1.08 0 2.6.62 3.37 1.39l113 112.22c.78.77 2.3 1.4 3.38 1.4h170.6c1.08 0 1.97.87 1.97 1.95v60.41" />
-
         </g>
       </svg>
     </div>
-
-    <div class="intro-text">
-      <img class='intro-text-svg' src="images/intro-text-light.svg" alt="" srcset="">
+    <div class="header__navigator magnet" id="navigator-magnet">
+      <img src="images/circle-arrow-down.svg" alt="arrow" style="width: 100px" />
+    </div>
+    <div class="typewriter">
+      <h1>شرکت مهندسی سامانه های پشتیبان تصمیم، تاک بن</h1>
     </div>
   </header>
-
-  <div class="navigator magnet" id="navigator-magnet">
-    <img src="images/circle-arrow-down.svg" alt="arrow" style="width:100px;">
-  </div>
-
   <nav class="main-nav">
-    <section class="section section_services">
-      <a class="section_services__item section_services__item_page_service-01" href="#">
-        <div class="p3u section_services__wrapper">
-          <div class="section_services__title">برنامه ریزی و زمان بندی</div>
-          <div class="section_services__text">
-            <ul>
-              <li>برنامه ریزی تولید
-              </li>
-              <li>زمان بندی تولید</li>
-            </ul>
-          </div>
-          <div class="section_services__number">01</div>
+    <a class="section_services__item section_services__item_page_service-01" href="#">
+      <div class="p3u section_services__wrapper">
+        <div class="section_services__title">برنامه ریزی و زمان بندی</div>
+        <div class="section_services__text">
+          <ul>
+            <li>برنامه ریزی تولید</li>
+            <li>زمان بندی تولید</li>
+          </ul>
         </div>
-      </a>
-      <a class="section_services__item section_services__item_page_service-02" href="#">
-        <div class="p3u section_services__wrapper">
-          <div class="section_services__title">داده کاوی
-          </div>
-          <div class="section_services__text">
-            <ul>
-              <li>پیش بینی مصرف</li>
-              <li>دسته بندی کالا</li>
-              <li> تحلیل اطلاعات مشتریان</li>
-              <li> نظرسنجی مشتریان</li>
-              <li> پیش بینی تقاضا</li>
-            </ul>
-          </div>
-          <div class="section_services__number">02</div>
+        <div class="section_services__number">01</div>
+      </div>
+    </a>
+    <a class="section_services__item section_services__item_page_service-02" href="#">
+      <div class="p3u section_services__wrapper">
+        <div class="section_services__title">داده کاوی</div>
+        <div class="section_services__text">
+          <ul>
+            <li>پیش بینی مصرف</li>
+            <li>دسته بندی کالا</li>
+            <li>تحلیل اطلاعات مشتریان</li>
+            <li>نظرسنجی مشتریان</li>
+            <li>پیش بینی تقاضا</li>
+          </ul>
         </div>
-      </a>
-      <a class="section_services__item section_services__item_page_service-03" href="#">
-        <div class="p3u section_services__wrapper">
-          <div class="section_services__title">فرایند کاوی
-          </div>
-          <div class="section_services__text">
-            <ul>
-              <li>تدوین فرایند
-              </li>
-              <li>تحلیل و عارضه یابی فرایند</li>
-            </ul>
-          </div>
-          <div class="section_services__number">03</div>
+        <div class="section_services__number">02</div>
+      </div>
+    </a>
+    <a class="section_services__item section_services__item_page_service-03" href="#">
+      <div class="p3u section_services__wrapper">
+        <div class="section_services__title">فرایند کاوی</div>
+        <div class="section_services__text">
+          <ul>
+            <li>تدوین فرایند</li>
+            <li>تحلیل و عارضه یابی فرایند</li>
+          </ul>
         </div>
-      </a>
-      <a class="section_services__item section_services__item_page_service-04" href="#">
-        <div class="p3u section_services__wrapper">
-          <div class="section_services__title">شبیه سازی
-          </div>
-          <div class="section_services__text">.</div>
-          <div class="section_services__number">04</div>
-        </div>
-      </a>
-      <a class="section_services__item section_services__item_page_service-05" href="#">
-        <div class="p3u section_services__wrapper">
-          <div class="section_services__title">بهینه سازی
-          </div>
-          <div class="section_services__text">.</div>
-          <div class="section_services__number">05</div>
-        </div>
-      </a>
-      <a class="section_services__item section_services__item_page_service-06" href="#">
-        <div class="p3u section_services__wrapper">
-          <div class="section_services__title">مدیریت سبد پروژه ها</div>
-          <div class="section_services__text">.</div>
-          <div class="section_services__number">06</div>
-        </div>
-      </a>
-    </section>
-
+        <div class="section_services__number">03</div>
+      </div>
+    </a>
+    <a class="section_services__item section_services__item_page_service-04" href="#">
+      <div class="p3u section_services__wrapper">
+        <div class="section_services__title">شبیه سازی</div>
+        <div class="section_services__text">.</div>
+        <div class="section_services__number">04</div>
+      </div>
+    </a>
+    <a class="section_services__item section_services__item_page_service-05" href="#">
+      <div class="p3u section_services__wrapper">
+        <div class="section_services__title">بهینه سازی</div>
+        <div class="section_services__text">.</div>
+        <div class="section_services__number">05</div>
+      </div>
+    </a>
+    <a class="section_services__item section_services__item_page_service-06" href="#">
+      <div class="p3u section_services__wrapper">
+        <div class="section_services__title">مدیریت سبد پروژه ها</div>
+        <div class="section_services__text">.</div>
+        <div class="section_services__number">06</div>
+      </div>
+    </a>
   </nav>
-
-  <div class="wrap wrap_main" id="wrap_main">
-    <section class="section section_subheader">
-      <div class="line"></div>
-      <div class="h4 section_subheader__header">
-        We increase LTV and ROI metrics by offering smart and creative approaches according to your goals, KPIs, and
-        strategic plan
+  <main class="main">
+    <div class="main__img">
+      <img class="main__img--image" src="images/arrow2.jpg" alt="">
+      <div class="main__img--text-wrapper">
+        <h1 data-aos="fade-up">
+          تصميم گيري دقيق، سريع، بهينه
+        </h1>
       </div>
-    </section>
-    <section class="section section_services">
-      <div class="line"></div>
-      <div class="h1 section_services__header animation_lines">
-        <div class="animation__item"><span class="animation__inner">
-            Custom mix of</span></div>
-        <div class="animation__item"><span class="animation__inner">
-            digital services
-          </span></div>
+    </div>
+
+    <!-- 3 cards -->
+    <div class="cart-wrapper">
+      <div class="cart-wrapper__cart" data-aos="fade-left" data-aos-delay="1200">
+        <div class="cart-wrapper__cart__body">
+          <div class="icon">
+            <!-- Icon -->
+            <i class="fa fa-graduation-cap"></i>
+          </div>
+          <!-- Text Box -->
+          <h5 class="">ارتباط با فضای آکادمیک</h5>
+          <p class="">
+            استفاده از فارغ التحصیلان دانشگاه های معتبر کشور در مقاطع تحصیلات تکمیلی
+            <br>
+            بهره گیری از برجسته ترین اساتید و مشاوران دانشکاهی در داخل و خارج از کشور
+          </p>
+        </div>
       </div>
-      <div class="p1u under-back section_services__text animation_fade"
-        style="opacity: 1; visibility: inherit; transform: translate(0px, 0px);">
-        Got a brilliant idea that will shake up the digital skyline? Let’s chat! <a href="#/partners/"
-          data-show-page="partners">Visit and drop us a line.</a>
+      <div class="cart-wrapper__cart" data-aos="fade-right" data-aos-delay="800">
+        <div class="cart-wrapper__cart__body upper">
+          <div class="icon">
+            <!-- Icon -->
+            <i class="fa fa-rocket"></i>
+          </div>
+          <!-- Text Box -->
+          <h5 class="">فناوری های جدید</h5>
+          <p class="">
+            مجهز به آخرين روش ها، فناوری ها و بروز ترین ابزارهاي تصميم گيري
+          </p>
+        </div>
+      </div>
+      <div class="cart-wrapper__cart" data-aos="fade-up" data-aos-delay="1000">
+        <div class="cart-wrapper__cart__body">
+          <div class="icon">
+            <!-- Icon -->
+            <i class="fa fa-random"></i>
+          </div>
+          <!-- Text Box -->
+          <h5 class="">سامانه های پشتیبان تصمیم</h5>
+          <p class="">
+            طراحي و مدل سازي انواع سامانه
+            هاي پشتيبان تصميم به ويژه سيستم هاي مورد نياز در صنايع بزرگ.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- article one DSS features -->
+    <section class="article  items-center ">
+      <div class="article__content  aos-init aos-animate" data-aos="zoom-in-left" data-aos-delay="500">
+        <div class="icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <h3 class="">
+          ویژگی های سیستم های پشتیبان تصمیم
+          :
+        </h3>
+        <ul>
+          <li> يك سيستم بر پايه كامپيوتر است كه از تكنولوژي ها و متدولوژي هاي كامپيوتري استفاده مي كند.</li>
+          <li>به تصميم گيري كمك مي كند ولي جايگزين فرد تصميم گير نمي شود.</li>
+          <li>از پايگاه هاي داده، مدل هاي تحليلي و محاسباتي، سيستم هاي خبره و الگوريتم هاي بهينه يابي درحل مسائل استفاده
+            مي كند.</li>
+          <li>قابليت پشتيباني از تصميم گيري هاي فردي و گروهي را دارد.</li>
+          <li>براي كليه سطوح مديريتي قابل استفاده است.</li>
+          <li style="text-decoration: underline;color: rgb(2, 2, 97);font-weight: bold;">دقت، سرعت و كيفيت تصميم گيري را
+            بهبود مي
+            بخشد.</li>
+        </ul>
       </div>
 
 
-      <div class="section_services__items">
-        <div class="glue section_services__item">
-          <a class="glue__circle section_services__circle" href="#/services/creative-strategy/">
-            <div class="section_services__circle-bg"></div>
-            <div class="p1u glue__circle-inner section_services__circle-inner">
-              Quality Control
-            </div>
-            <div
-              class="p1u mp3u glue__tooltip wrap_main__section_services__tooltip wrap_main__section_services__tooltip_1">
-              You shall not pass! Why would you try to anyway? Stop by and let us tell you more about our custom-made
-              advertising campaigns.
-            </div>
-          </a>
+      <!-- Image Cap & Text Card -->
+      <div class="aos-init aos-animate article__image" data-aos="flip-right" data-aos-delay="1000">
+        <div class="article__image--image">
+          <img alt="DSS" src="images/decision03.jfif" class="">
+          <div class="article__image--caption">
+            <h3 class="">
+              Enjoy your decisions
+            </h3>
+            <p class="">
+              We offer our decision support system (DSS) Services
+            </p>
+          </div>
         </div>
-        <div class="glue section_services__item" style="opacity: 1; visibility: inherit;">
-          <a class="glue__circle section_services__circle" href="#/services/smm-community-management/">
-            <div class="section_services__circle-bg"></div>
-            <div class="p1u glue__circle-inner section_services__circle-inner">
-              Scheduling
-            </div>
-            <div
-              class="p1u mp3u glue__tooltip wrap_main__section_services__tooltip wrap_main__section_services__tooltip_2">
-              Life is like a box of chocolates. The same is with social media.
-            </div>
-          </a>
-        </div>
-        <div class="glue section_services__item" style="opacity: 1; visibility: inherit;">
-          <a class="glue__circle section_services__circle" href="#/services/influencer-marketing/">
-            <div class="section_services__circle-bg"></div>
-            <div class="p1u glue__circle-inner section_services__circle-inner">
-              Data mining
-            </div>
-            <div
-              class="p1u mp3u glue__tooltip wrap_main__section_services__tooltip wrap_main__section_services__tooltip_3">
-              Why so serious? Like, share &amp; subscribe!
-            </div>
-          </a>
-        </div>
-        <div class="glue section_services__item" style="opacity: 1; visibility: inherit;">
-          <a class="glue__circle section_services__circle" href="#/services/performance-marketing/">
-            <div class="section_services__circle-bg"></div>
-            <div class="p1u glue__circle-inner section_services__circle-inner">
-              simulation
-            </div>
-            <div
-              class="p1u mp3u glue__tooltip wrap_main__section_services__tooltip wrap_main__section_services__tooltip_4">
-              All we need is love! Or, at least, loyal users.
-            </div>
-          </a>
-        </div>
-        <div class="glue section_services__item" style="opacity: 1; visibility: inherit;">
-          <a class="glue__circle section_services__circle" href="#/services/autofunnels/" data-show-page="service-03">
-            <div class="section_services__circle-bg"></div>
-            <div class="p1u glue__circle-inner section_services__circle-inner">
-              forecasting
-            </div>
-            <div
-              class="p1u mp3u glue__tooltip wrap_main__section_services__tooltip wrap_main__section_services__tooltip_5">
-              To be, or not to be: that is the call-to-action
-            </div>
-          </a>
-        </div>
-        <div class="glue section_services__item" style="opacity: 1; visibility: inherit;">
-          <a class="glue__circle section_services__circle" href="#/services/aso/" data-show-page="service-06">
-            <div class="section_services__circle-bg"></div>
-            <div class="p1u glue__circle-inner section_services__circle-inner">capacity measurement
-            </div>
-            <div
-              class="p1u mp3u glue__tooltip wrap_main__section_services__tooltip wrap_main__section_services__tooltip_6">
-              Actions usually speak louder than words. Bullsh*t. Words matter!
-            </div>
-          </a>
-        </div>
-        <div class="glue section_services__item" style="opacity: 1; visibility: inherit;">
-          <a class="glue__circle section_services__circle" href="#/services/aso/" data-show-page="service-06">
-            <div class="section_services__circle-bg"></div>
-            <div class="p1u glue__circle-inner section_services__circle-inner">
-              assignment
-            </div>
-            <div
-              class="p1u mp3u glue__tooltip wrap_main__section_services__tooltip wrap_main__section_services__tooltip_6">
-              Actions usually speak louder than words. Bullsh*t. Words matter!
-            </div>
-          </a>
-        </div>
-        <div class="glue section_services__item" style="opacity: 1; visibility: inherit;">
-          <a class="glue__circle section_services__circle" href="#/services/aso/" data-show-page="service-06">
-            <div class="section_services__circle-bg"></div>
-            <div class="p1u glue__circle-inner section_services__circle-inner">
-              benefit cost analysis
-            </div>
-            <div
-              class="p1u mp3u glue__tooltip wrap_main__section_services__tooltip wrap_main__section_services__tooltip_6">
-              Actions usually speak louder than words. Bullsh*t. Words matter!
-            </div>
-          </a>
-        </div>
-        <div class="glue section_services__item" style="opacity: 1; visibility: inherit;">
-          <a class="glue__circle section_services__circle" href="#/services/aso/" data-show-page="service-06">
-            <div class="section_services__circle-bg"></div>
-            <div class="p1u glue__circle-inner section_services__circle-inner">
-              project portfolio management
-            </div>
-            <div
-              class="p1u mp3u glue__tooltip wrap_main__section_services__tooltip wrap_main__section_services__tooltip_6">
-              Actions usually speak louder than words. Bullsh*t. Words matter!
-            </div>
-          </a>
-        </div>
-        <div class="glue section_services__item" style="opacity: 1; visibility: inherit;">
-          <a class="glue__circle section_services__circle" href="#/services/aso/" data-show-page="service-06">
-            <div class="section_services__circle-bg"></div>
-            <div class="p1u glue__circle-inner section_services__circle-inner">
-              queue management
-            </div>
-            <div
-              class="p1u mp3u glue__tooltip wrap_main__section_services__tooltip wrap_main__section_services__tooltip_6">
-              Actions usually speak louder than words. Bullsh*t. Words matter!
-            </div>
-          </a>
-        </div>
-        <div class="glue section_services__item" style="opacity: 1; visibility: inherit;">
-          <a class="glue__circle section_services__circle" href="#/services/aso/" data-show-page="service-06">
-            <div class="section_services__circle-bg"></div>
-            <div class="p1u glue__circle-inner section_services__circle-inner">
-              distribution location
-            </div>
-            <div
-              class="p1u mp3u glue__tooltip wrap_main__section_services__tooltip wrap_main__section_services__tooltip_6">
-              Actions usually speak louder than words. Bullsh*t. Words matter!
-            </div>
-          </a>
-        </div>
-        <div class="glue section_services__item" style="opacity: 1; visibility: inherit;">
-          <a class="glue__circle section_services__circle" href="#/services/aso/" data-show-page="service-06">
-            <div class="section_services__circle-bg"></div>
-            <div class="p1u glue__circle-inner section_services__circle-inner">
-              reliability
-            </div>
-            <div
-              class="p1u mp3u glue__tooltip wrap_main__section_services__tooltip wrap_main__section_services__tooltip_6">
-              Actions usually speak louder than words. Bullsh*t. Words matter!
-            </div>
-          </a>
-        </div>
-
-
       </div>
     </section>
 
-    <section class="section section_numbers">
-      <div class="line">
-        <div class="p2u line__caption">
-          <div class="line__col-1">Takbon Company</div>
-          <div class="line__col-2">©2021</div>
+
+    <!-- splitter image -->
+    <section class="space-image aos-init aos-animate" data-aos="zoom-in-left">
+      <div class='rotate-img'>
+        <img src="images/scm-trans.png" alt="">
+      </div>
+    </section>
+
+
+    <!-- dsc article -->
+    <section class="article  items-center dsc ">
+      <!-- Image Cap & Text Card -->
+      <div class="aos-init aos-animate article__image image-half" data-aos="flip-left" data-aos-delay="500">
+        <div class="article__image--image ">
+          <img alt="DSS" src="images/scm.jpg" class="">
+          <div class="article__image--caption" style="transform: translateY(1rem);">
+            <h3 class="">
+              Digitize Your Supply Chain
+            </h3>
+            <p class="">
+              We offer our Digital Supply Chain Management (DSCM) Services
+            </p>
+          </div>
         </div>
       </div>
-      <div class="section_numbers__items">
-        <div class="section_numbers__item" style="transform: translate(0%, 18.2655%) translate3d(0px, 0px, 0px);">
-          <div class="p1u section_numbers__label">حیات تاکبن</div>
-          <div class="h0 section_numbers__title">2008</div>
-          <img class='founded-image' src="images/life-cycle.png" alt="life">
+      <div class="article__content aos-init aos-animate" data-aos="zoom-in-left" data-aos-delay="200">
+        <div class="icon">
+          <i class="fas fa-star"></i>
         </div>
-        <div class="section_numbers__item" style="transform: translate(0%, 36.531%) translate3d(0px, 0px, 0px);">
-          <div class="p1u section_numbers__label">نیروی متخصص</div>
-          <div class="h0 section_numbers__title">21</div>
-          <img class='founded-image' src="images/personels2.JPG" alt="experts">
+        <h3 class="">
+          ویژگی های زنجیره تامین دیجیتال
+        </h3>
+        <ul>
+          <li><span style="font-weight: bold;color: black;">ابزاری:</span>
+            اطلاعات موجود در زنجیره تامین نسل بعدی به طور عمده توسط ماشین تولید می‌شوند، به عنوان مثال توسط
+            سنسورها، تگ‌های RFID، کنتورها و بسیاری دیگر.</li>
+          <li><span style="font-weight: bold;color: black;">پیوستگی:</span> کل زنجیره تامین، شامل نهادها و
+            دارایی‌هایی کسب‌و‌کار، سیستمهای IT، محصولات و سایر اشیا هوشمند
+            همه در یک زنجیره تأمین هوشمند به هم متصل شده‌اند.</li>
+          <li><span style="font-weight: bold;color: black;">هوشمند:</span> زنجیره‌های تامین هوشمند برای
+            بهینه‌سازی عملکرد، تصمیمات بهینه در مقیاس بزرگ را اتخاذ می‌کنند.
+          </li>
+          <li><span style="font-weight: bold;color: black;">اتوماسیون:</span> زنجیره‌های تامین هوشمند با
+            استفاده
+            از ماشین‌آلات به عنوان جایگزین سایر منابع کم بازده از جمله
+            نیروی کار، بیشتر فرآیندهای خود را به صورت خودکار انجام می‌دهند.</li>
+          <li><span style="font-weight: bold;color: black;">یکپارچگی</span> یکپارچگی فرآیندهای زنجیره تامین
+            شامل همکاری در مراحل زنجیره تامین، تصمیم‌گیری‌های مشترک،
+            سیستم‌های مشترک و به اشتراک‌گذاری اطلاعات است.</li>
+          <li><span style="font-weight: bold;color: black;">نوآورانه</span> نوآوری عبارت است از توسعه ارزش‌های
+            جدید از طریق راه حل‌هایی که نیازهای جدید، نیازهای بزرگ و یا
+            حتی نیازهای موجود را از راه‌های بهتر تأمین می‌کنند.</li>
+        </ul>
+      </div>
+
+    </section>
+
+
+    <!-- personel ilage carousel slider -->
+    <section class="carousel" data-aos="flip-up" data-aos-delay="600" data-aos-duration="2000">
+      <div class="icon">
+        <i class="fas fa-star"></i>
+      </div>
+      <h2>سرمایه های انسانی تاک بن:</h2>
+      <div class="slider-container">
+        <div class="cart">
+          <div class="image-wrapper"><img src="images/personel/آزادی.jpg" alt="آزادی"></div>
+          <div class="text">
+            <h3>احمدرضا آزادی</h3>
+            <p>متخصص ظرفیت سنجی و تحلیل گر ارشد سیستم ها
+              <br>
+              کارشناسی ارشد مهندسی صنایع از دانشگاه صنعتی اصفهان
+            </p>
+          </div>
         </div>
-        <div class="section_numbers__item" style="transform: translate(0%, 54.7965%) translate3d(0px, 0px, 0px);">
-          <div class="p1u section_numbers__label">Languages</div>
-          <div class="h0 section_numbers__title">12</div>
+        <div class="cart">
+          <div class="image-wrapper"><img src="images/personel/هدایت نیا3.jpg" alt="هدایت نیا"></div>
+          <div class="text">
+            <h3>محمدرضا هدایت نیا</h3>
+            <p>کارشناسی ارشد معماری دانشگاه هنر اصفهان
+              توسعه دهنده نرم افزار <br>
+              طراح وب و برنامه نویس فول استک <br>
+            </p>
+          </div>
         </div>
-        <div class="section_numbers__item" style="transform: translate(0%, 73.062%) translate3d(0px, 0px, 0px);">
-          <div class="p1u section_numbers__label">Managed marketing budget</div>
-          <div class="h0 section_numbers__title">$200M</div>
+
+        <div class="cart">
+          <div class="image-wrapper"><img src="images/personel/امینی 5.png" alt="امینی"></div>
+          <div class="text">
+            <h3>مائده امینی</h3>
+            <p>متخصص شبیه سازی و تحلیل گر ارشد سیستم ها
+              <br>
+              کارشناسی ارشد مهندسی صنایع از دانشگاه صنعتی اصفهان
+            </p>
+          </div>
         </div>
-        <div class="section_numbers__item" style="transform: translate(0%, 91.3276%) translate3d(0px, 0px, 0px);">
-          <div class="p1u section_numbers__label">Operating worldwide</div>
-          <div class="h0 section_numbers__title">WW</div>
+        <div class="cart">
+          <div class="image-wrapper"><img src="images/personel/انتشاری 4.png" alt="انتشاری"></div>
+          <div class="text">
+            <h3>الهام انتشاری</h3>
+            <p>متخصص برنامه ریزی تولید و زنجیره تامین و تحلیل گر ارشد سیستم ها
+              <br>
+              کارشناسی ارشد مهندسی صنایع از دانشگاه علم و صنعت
+            </p>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="image-wrapper"><img src="images/personel/کاوش4.png" alt="کاوش"></div>
+          <div class="text">
+            <h3>سهیلا کاوش</h3>
+            <p> تحلیل گر ارشد سیستم ها
+              <br>
+              کارشناسی ارشد مهندسی صنایع از دانشگاه صنعتی اصفهان
+              <br>
+              مدیر فنی، مدیرتوسعه و مدیر توسعه بازار
+            </p>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="image-wrapper"><img src="images/personel/یداله پور2.png" alt="یداله پور"></div>
+          <div class="text">
+            <h3>محمدرضا یداله پور</h3>
+            <p> تحلیل گر ارشد سیستم ها
+              <br>
+              دکترای مهندسی صنایع از دانشگاه صنعتی اصفهان
+              <br>
+              مدیر فنی، مدیرتوسعه و مدیر توسعه بازار
+            </p>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="image-wrapper"><img src="images/personel/مسیبی.jpg" alt="مسیبی"></div>
+          <div class="text">
+            <h3>حیدر مسیبی</h3>
+            <p> متخصص سیستم های اطلاعاتی
+              <br>
+              مدیر سابق طرح ارتقا سیستم های اطلاعاتی فولاد مبارکه
+              <br>
+              مدیرعامل شرکت تاکبن
+            </p>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="image-wrapper"><img src="images/personel/اعلایی3.png" alt="علایی"></div>
+          <div class="text">
+            <h3>امیرمحمد اعلایی</h3>
+            <p>تحلیل گر ارشد هوش تجاری و برنامه ریزی تولید
+              <br>
+              کارشناسی ارشد مهندسی صنایع از دانشگاه تهران
+            </p>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="image-wrapper"><img src="images/personel/ابراهیمی.jpg" alt="ابراهیمی"></div>
+          <div class="text">
+            <h3>حمیدرضا ابراهیمی</h3>
+            <p>تحلیل گر ارشد هوش تجاری و برنامه ریزی تولید
+              <br>
+              کارشناسی ارشد مهندسی صنایع از دانشگاه اصفهان
+            </p>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="image-wrapper"><img src="images/personel/man.png" alt="یارعلی"></div>
+          <div class="text">
+            <h3>صفر یارعلی</h3>
+            <p>تحلیل گر ارشد هوش تجاری و برنامه ریزی تولید
+              <br>
+              کارشناسی ارشد مهندسی صنایع از دانشگاه شریف
+            </p>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="image-wrapper"><img src="images/personel/سلمانیان2.jpg" alt="سلمانیان"></div>
+          <div class="text">
+            <h3> سارا سلمانیان</h3>
+            <p>تحلیل گر هوش تجاری و برنامه ریزی تولید
+              <br>
+              کارشناسی مهندسی صنایع دانشگاه دانش پژوهان
+            </p>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="image-wrapper"><img src="images/personel/آخوندی3.jpg" alt="آخوندی"></div>
+          <div class="text">
+            <h3> نسیم آخوندی</h3>
+            <p>تحلیل گر ارشد هوش تجاری و برنامه ریزی تولید
+              <br>
+              کارشناسی ارشد مهندسی صنایع صنعتی اصفهان
+            </p>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="image-wrapper"><img src="images/personel/شجاعی2.jpg" alt="شجاعی"></div>
+          <div class="text">
+            <h3> آیدا شجاعی</h3>
+            <p>تحلیل گر ارشد هوش تجاری و برنامه ریزی تولید
+              <br>
+              کارشناسی ارشد مهندسی صنایع صنعتی اصفهان
+            </p>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="image-wrapper"><img src="images/personel/female.png" alt="ساجدی"></div>
+          <div class="text">
+            <h3>شمیم ساجدی</h3>
+            <p>تحلیل گر ارشد هوش تجاری و برنامه ریزی تولید
+              <br>
+              کارشناسی ارشد مهندسی صنایع صنعتی اصفهان
+            </p>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="image-wrapper"><img src="images/personel/سعیدی2.jpg" alt="سعیدی"></div>
+          <div class="text">
+            <h3> سیما سعیدی</h3>
+            <p>تحلیل گر ارشد هوش تجاری و برنامه ریزی تولید
+              <br>
+              کارشناسی ارشد مهندسی صنایع از دانشگاه صنعتی اصفهان
+            </p>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="image-wrapper"><img src="images/personel/سلیمانی2.jpg" alt="سلیمانی"></div>
+          <div class="text">
+            <h3> الهه سلیمانی</h3>
+            <p>تحلیل گر ارشد هوش تجاری و برنامه ریزی تولید
+              <br>
+              کارشناسی ارشد مهندسی صنایع از دانشگاه صنعتی اصفهان
+            </p>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="image-wrapper"><img src="images/personel/female.png" alt="عصارزادگان"></div>
+          <div class="text">
+            <h3>پریسا عصارزادگان</h3>
+            <p>تحلیل گر ارشد هوش تجاری و برنامه ریزی تولید
+              <br>
+              دکترای مهندسی صنایع از دانشگاه صنعتی اصفهان
+            </p>
+          </div>
         </div>
       </div>
     </section>
-  </div>
 
+
+  </main>
+
+  <!-- <section class="section__circlepack">
+    <div class="main-header">
+      <h1>طبقه بندی خدمات قابل ارائه:</h1>
+    </div>
+    <div class="section_services__items pack"></div>
+  </section> -->
+  <footer class="footer row">
+    <div class="col-4">
+      <div class="Footer__heading">
+        <h3>در یک نگاه</h3>
+      </div>
+      <div class="footer__body">
+        تاكبـن به عنوان یک شرکت دانش بنیان، با تكيه بر تيم فني جوان، خلاق و مجهز به آخريـن روش ها و ابزارهاي تصميم
+        گيري، در زمينه طراحـي انواع سامانه هاي پشتيبان تصميم بويژه سيستم هاي مورد نياز در صنايع فولاد فعاليت مي كند.
+        <br>
+        عمده فعالیت های این شرکت بر طراحی و توسعه سیستم های پیشرفته برنامه ریزی تولید، مدل های بهینه سازی، شبیه سازی و
+        داده کاوی متمرکز است.
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="Footer__heading">
+        <h3>خدمات قابل ارائه</h3>
+      </div>
+      <div class="footer__body">
+        <ul>
+          <li>پیش بینی مصرف</li>
+          <li>دسته بندی کالا</li>
+          <li>تحلیل اطلاعات مشتریان</li>
+          <li>نظرسنجی مشتریان</li>
+          <li>پیش بینی تقاضا</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="Footer__heading">
+        <h3>توانمندی های شرکت تاکبن</h3>
+      </div>
+      <div class="footer__body">
+        <ul>
+          <li>طراحی و پیاده سازی سیستم های پشتیبان تصمیم</li>
+          <li>برنامه ریزی و زمان بندی تولید</li>
+          <li>مديريت زنجيره تأمين و لجستيک</li>
+          <li>ارائه مدل های شبیه سازی گسسته و عامل بنیان فرایند</li>
+          <li>ارائه راه حل هاي جامع برنامه ريزي در صنعت فولاد</li>
+          <li>ارائه مدل های داده کاوی</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="Footer__heading">
+        <h3>راه های ارتباطی</h3>
+      </div>
+      <div class="footer__body">نشانی:<br>
+        اصفهان، توحید میانی، کوچه 27، ساختمان پاسارگاد، طبقه 3 واحد 301
+        <br>
+        تلفن:
+        <br>
+        031-36284865
+        <br>
+        031-36284867
+        <div class="icon">
+          <i><a href="#" class="fa fa-linkedin"></a></i>
+          <a href="https://google.com"><i class="fab fa-linkedin"></i></a>
+          <a href="https://google.com"><i class="fas fa-envelope"></i></a>
+          <a href="https://google.com"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
-
-<script src="vendors/anime.min.js"></script>
-<script src="vendors/magnet-mouse.min.js"></script>
-<script src="script.js"></script>
 
 </html>

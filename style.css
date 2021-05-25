@@ -593,6 +593,9 @@ body {
   bottom: 1rem;
   animation: rotate-image 50s linear infinite;
 }
+.rotate-img:hover {
+  animation: rotate-image 1s linear infinite;
+}
 /* .rotate-img img {
   width: 30rem;
 } */

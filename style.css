@@ -709,7 +709,7 @@ body {
   font-size: 2rem;
   font-weight: 800;
   margin-bottom: 2rem;
-  margin-right: 2rem;
+  margin-right: 4rem;
   color: var(--color-black);
 }
 /* 
@@ -796,7 +796,7 @@ body {
 
 .body__projects2 .bg {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   position: fixed;
   top: 0;
   left: 0;
@@ -1124,58 +1124,95 @@ a {
   background: #333;
   color: #fff;
 }
+
 /* about page */
-body.about header {
-  background-image: linear-gradient(
-    to right,
-    rgba(3, 92, 51, 0.8),
-    rgba(112, 241, 133, 0.7)
-  );
-}
-body.about header img.bg {
-  object-position: top;
-  position: absolute;
-  height: 100%;
-  object-fit: contain;
-  margin: 0 auto;
+
+main.about {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray-light);
 }
 
-main.about .bg {
-  background: url(images/building-bg.jpg) no-repeat top center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-}
-/* main.about img.bg {
+body.about .bg {
   position: absolute;
   top: 0;
-} */
-header {
-  position: relative;
+  left: 0;
+  width: 100%;
 }
+body.about .bg img {
+  width: 100%;
+}
+
 .about__content-wrapper {
   position: relative;
-  transform: translateY(-80vh);
+  padding-top: 10rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  color: blue;
-  /* top: 15%; */
   width: 100vw;
-  align-content: flex-start;
+  align-content: space-evenly;
   justify-content: space-evenly;
 }
 
 .about__content-wrapper .glance {
+  color: var(--color-black);
   min-width: 30rem;
-  max-width: 30rem;
-  min-height: 5rem;
+  max-width: 40%;
+  padding: 2rem;
   margin-bottom: 2rem;
-  border-radius: 1rem;
+}
+.about__content-wrapper .glance.image-wrapper {
   box-shadow: 1rem 0.8rem 0.4rem -4px rgb(0 0 0 / 30%);
   background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+}
+.about__content-wrapper .glance.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.about__content-wrapper .glance.text-wrapper div.text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
   padding: 2rem;
+  box-shadow: 1rem 0.8rem 0.4rem -4px rgb(0 0 0 / 30%);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 1rem;
+}
+.about__content-wrapper .glance ul {
+  margin: 1rem;
+  padding-right: 3rem;
+}
+.about__content-wrapper .glance p {
+  text-align: justify;
+  text-justify: inter-word;
+  word-spacing: 0.3rem;
+  font-weight: 500;
+}
+.glance img,
+.glance video {
+  width: 100%;
+  border-radius: 1rem;
+  margin: 0 auto;
+}
+span.blue-highlight {
+  color: blue;
+  text-decoration: underline;
+  font-weight: 600;
+  word-spacing: 0.5rem;
+  font-size: 1.3rem;
+}
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+.about__content-wrapper .carousel {
+  margin: 2rem 2rem 12rem;
 }

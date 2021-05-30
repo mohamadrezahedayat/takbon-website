@@ -1,38 +1,32 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>تماس با ما</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.7.0/d3.min.js"
-    integrity="sha512-cd6CHE+XWDQ33ElJqsi0MdNte3S+bQY819f7p3NUHgwQQLXSKjE4cPZTeGNI+vaxZynk1wVU3hoHmow3m089wA=="
-    crossorigin="anonymous"></script>
-  <script src="vendors/anime.min.js" defer></script>
-  <script src="vendors/magnet-mouse.min.js" defer></script>
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
-  <!-- AOS CSS-->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <!-- AOS.js -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-  <!-- Navigation Script -->
-  </script>
-  <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>شرکت مهندسی سامانه های پشتیبان تصمیم – تاکبن</title>
+  <!-- CSS -->
+  <link href="vendors/aos.css" rel="stylesheet"><!-- AOS CSS-->
+  <link rel="stylesheet" href="vendors/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- fav icon -->
+  <link rel="icon" type="image/png" href="images/favicon.ico">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
+  <!-- scripts -->
+  <script src="vendors/aos.js" defer></script>
+  <script src="vendors/d3.min.js"></script>
+  <script src="vendors/anime.min.js" defer></script>
+  <script src="vendors/magnet-mouse.min.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 
-<body class="services">
+<body class="about">
   <div></div>
   <header>
 
 
-    <a class="header__logo" href=""><img src="images/takbon3.gif" alt="logo" /></a>
+    <a class="header__logo" href=""><img src="images/takbon5.gif" alt="logo" /></a>
     <div class="header__menu ">
       <ul>
         <li><a class="active" href="index.html">خانه</a></li>
@@ -43,44 +37,38 @@
       </ul>
     </div>
   </header>
-  <main class="services">
-    <div class="bg"><img src="images/services-bg.jpg" alt="service-bg"></div>
-    <div class="slider">
+  <main class="about">
+    <div class="bg"><img src="images/contact.jpg" alt=""></div>
 
-      <a href="#slide-1">1</a>
-      <a href="#slide-2">2</a>
-      <a href="#slide-3">3</a>
-      <a href="#slide-4">4</a>
-      <a href="#slide-5">5</a>
-      <a href="#slide-6">6</a>
+    <div class="about__content-wrapper">
+      <!-- مقدمه -->
+      <div class="glance text-wrapper" data-aos="flip-right" data-aos-delay="200" data-aos-duration="2000">
+        <div class="text">
+          <h2>تماس با ما :</h2>
+          <h3>نشانی:</h3>
+          <p> خیابان توحید میانی، نبش کوچه 27، ساختمان پاسارگاد، طبقه 3، واحد 301</p>
+          <h3>شماره های تماس:</h3>
+          <p>03136284865 </p>
+          <p> 03136284867</p>
+          <h3>شبکه های اجتماعی:</h3>
+          <div class="icon">
+            <a href="https://www.linkedin.com/company/9397336"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/taakbon/"><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fas fa-envelope"></i></a>
+          </div>
 
-      <div class="slides">
-        <div id="slide-1">
-          <img src="images/diagnosis.png" alt="diagnosis">
-          <h2>عارضه یابی</h2>
-        </div>
-        <div id="slide-2">
-          <img src="images/production-planning3.jpg" alt="production-planning">
-          <h2>ّبرنامه ریزی تولید</h2>
-        </div>
-        <div id="slide-3">
-          <img src="images/process eng design3.png" alt="process eng design">
-          <h2>مهندسی فرایندها</h2>
-        </div>
-        <div id="slide-4">
-          <video src="video/simulation.mp4" autoplay loop muted></video>
-          <h2>شبیه سازی</h2>
-        </div>
-        <div id="slide-5">
-          <img src="images/learning2.png" alt="learning">
-          <h2>آموزش</h2>
-        </div>
-        <div id="slide-6">
-          <img src="images/inf-system.jpg" alt="inf-system">
-          <h2>طراحی و استقرار سیستم های اطلاعاتی</h2>
         </div>
       </div>
-    </div>
+      <!-- ساختمان -->
+      <div class="glance image-wrapper" data-aos="flip-left" data-aos-delay="400" data-aos-duration="2000">
+        <img src="images/building-bg.jpg" alt="building takbon">
+      </div>
+
+      <div class="glance image-wrapper" data-aos="flip-left" data-aos-delay="400" data-aos-duration="2000">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840.0046519525831!2d51.65809602917789!3d32.632327928222715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fbc377ca4c8eb13%3A0x25f37b07b885e24c!2z2YXYstmI2YYg2LnYsdmI2LMg2YXbjNizINmI2KfbjNiq!5e0!3m2!1sen!2sus!4v1622380467849!5m2!1sen!2sus"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
 
 
   </main>
@@ -139,6 +127,11 @@
         031-36284865
         <br>
         031-36284867
+        <div class="icon">
+          <a href="https://www.linkedin.com/company/9397336"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/taakbon/"><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fas fa-envelope"></i></a>
+        </div>
       </div>
     </div>
   </footer>
